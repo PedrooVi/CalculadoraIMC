@@ -1,0 +1,70 @@
+html{
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  background-color: rgb(17, 129, 73);
+  width: auto;
+  height: 70px;
+  font-weight: bolder;
+  font-size: 60px;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  grid-area: "teto";
+  margin-top: -15px;
+  grid-area: "header";
+}
+main{
+  display: flex;
+  grid-template-columns: 
+  "header header",
+  "conteudo igual";
+  gap: 10%;
+}
+input{
+  display: block;
+  height: 30px;
+  font-size: large;
+}
+button{
+  height: 45px;
+  width: 160px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(17, 129, 73);
+  color: white;
+  border-style:none;
+  cursor: pointer;
+}
+/*Style Class*/
+.conteudo{
+  grid-area: "conteudo";
+  width: 50%;
+  margin-left: 30px;
+  font-weight: bold;
+  display: grid;
+  gap: 10px;
+}
+  .igual{
+    grid-area: "igual";
+    width: 50%;
+    margin: auto;
+}
+
+/*Style ID*/
+#peso{
+  width: 50px;
+}
+#altura{
+  width: 80px;
+}
+#idade{
+  width: 50px;
+}
+#namezes{
+  width: 300px;
+}
+#pedrinho{
+  width: 200px;
+}

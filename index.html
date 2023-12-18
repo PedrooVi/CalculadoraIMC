@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="author" content="MarcusVMendes, PedroVCorrea">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <header> Calculadora IMC</header>
+    <main class="container">
+        <div class="conteudo">
+                <!--Formulario-->
+                <div class="formulario">
+                    <label id="name" for="">Nome:</label>
+                        <input type="text" id="namezes" placeholder="Digite seu nome...">
+                </div>
+                <div class="formulario">
+                    <label for="" name="idade">Idade:</label>
+                        <input id="idade" type="number" min="0" max="150" placeholder="0">
+                </div>
+                <div class="formulario">
+                    <label for="" name="altura">Digite sua altura:</label>
+                        <input type="text" id="altura" placeholder="ex: 1.60">
+                </div>
+                <div class="formulario">
+                    <label for="" name="peso">Informe seu peso:</label>
+                        <input type="text" id="peso" placeholder="ex: 75">
+                </div>
+                <div class="formulario">    
+                    <button id="calculo" onclick="calcular()">Calcular</button>
+                </div>
+            </div>
+            <div class="igual">
+                <p id="resultado">Seu IMC é:</p>
+                <img src="img/pedrinho.jpg" id="pedrinho" alt="">
+            </div>
+        </main>
+        <footer></footer>
+</body>
+<script src="src/script.js"></script>
+</html>
