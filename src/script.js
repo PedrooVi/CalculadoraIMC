@@ -3,7 +3,7 @@ function calcular(){
     var txtAltura = document.getElementById("altura")
     var txtPeso = document.getElementById("peso")
     var resultado = document.getElementById('resultado')
-    var areaTxt = document.getElementById('telinha')
+    var areaTxt = document.getElementById('igual')
 
     var altura = parseFloat(txtAltura.value)
     var peso = parseFloat(txtPeso.value)
