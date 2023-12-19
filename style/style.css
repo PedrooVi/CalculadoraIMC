@@ -95,3 +95,7 @@ button{
   width: 50px;
   margin-left: 95%;
 }
+#resultado{
+  margin-top: 140px;
+  text-align: center;
+}
