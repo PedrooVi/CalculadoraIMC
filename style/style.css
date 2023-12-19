@@ -1,19 +1,25 @@
 html{
-  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(19, 19, 19);
 }
 header{
-  background-color: rgb(17, 129, 73);
+  background-color: rgb(43, 43, 43);
   width: auto;
   height: 70px;
   font-weight: bolder;
   font-size: 60px;
   color: white;
   border-style: none;
-  border-radius: 5px;
   grid-area: "teto";
   margin-top: -15px;
   grid-area: "header";
+  border-bottom: 20px;
+  border-style: solid;
+  border-color: rgb(19, 19, 19);
+}
+footer{
+  margin-top: 155px;
+  background-color: rgb(43, 43, 43);
 }
 main{
   display: flex;
@@ -22,25 +28,32 @@ main{
   "conteudo igual";
   gap: 10%;
 }
+label{
+  color: rgb(192, 192, 192);
+}
 input{
   display: block;
   height: 30px;
   font-size: large;
+  color: rgb(192, 192, 192);
+  background-color: rgb(37, 37, 37);
+  border-style: none;
 }
 button{
   height: 45px;
   width: 160px;
   font-size: 25px;
   font-weight: bold;
-  background-color: rgb(17, 129, 73);
-  color: white;
-  border-style:none;
+  background-color:rgb(68, 68, 68);
+  color: rgb(192, 192, 192);
+  border-style:solid;
+  border-color: rgb(43, 43, 43);
   cursor: pointer;
 }
 /*Style Class*/
 .conteudo{
   grid-area: "conteudo";
-  width: 50%;
+  width: 100%;
   margin-left: 30px;
   font-weight: bold;
   display: grid;
@@ -50,8 +63,18 @@ button{
     grid-area: "igual";
     width: 50%;
     margin: auto;
+    font-weight: bold;
+    color: rgb(192, 192, 192);
 }
-
+.quadrado{
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(192, 192, 192);
+  border-radius: 10px;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;  
+}
 /*Style ID*/
 #peso{
   width: 50px;
@@ -67,4 +90,8 @@ button{
 }
 #pedrinho{
   width: 200px;
+}
+#gatinho{
+  width: 50px;
+  margin-left: 95%;
 }

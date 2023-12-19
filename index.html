@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <meta name="author" content="MarcusVMendes, PedroVCorrea">
+    <meta name="author" content="MarcusVMendes (front-end), PedroVCorrea (back-end)">
     <title>Calculadora IMC</title>
 </head>
 <body>
@@ -14,30 +14,32 @@
                 <!--Formulario-->
                 <div class="formulario">
                     <label id="name" for="">Nome:</label>
-                        <input type="text" id="namezes" placeholder="Digite seu nome...">
-                </div>
+                        <input type="text" id="namezes" placeholder="Digite seu nome...">            
+                    </div>
                 <div class="formulario">
                     <label for="" name="idade">Idade:</label>
                         <input id="idade" type="number" min="0" max="150" placeholder="0">
                 </div>
                 <div class="formulario">
                     <label for="" name="altura">Digite sua altura:</label>
-                        <input type="text" id="altura" placeholder="ex: 1.60">
+                    <input type="text" id="altura" placeholder="ex: 1.60">
                 </div>
                 <div class="formulario">
                     <label for="" name="peso">Informe seu peso:</label>
                         <input type="text" id="peso" placeholder="ex: 75">
-                </div>
-                <div class="formulario">    
-                    <button id="calculo" onclick="calcular()">Calcular</button>
+                    </div>
+                    <div class="formulario">    
+                        <button id="calculo" onclick="calcular()">Calcular</button>
                 </div>
             </div>
             <div class="igual">
-                <p id="resultado">Seu IMC é:</p>
-                <img src="img/pedrinho.jpg" id="pedrinho" alt="">
+                <p>Seu IMC é:</p>
+                <div class="quadrado">
+                    <p id="resultado"></p>
+                </div>
             </div>
         </main>
-        <footer></footer>
-</body>
+        <footer><a href="https://github.com/PedrooVi/CalculadoraIMC" target="_blank"><img src="img/githubgato.png" alt="gato do github" id="gatinho"></a></footer>
+    </body>
 <script src="src/script.js"></script>
 </html>
