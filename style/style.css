@@ -1,9 +1,10 @@
 html{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(13, 12, 29);
 
 }
 header{
-  background-color: rgb(12, 4, 37);
+  background-color: rgb(17, 1, 41);
   width: auto;
   height: 70px;
   font-weight: bolder;
@@ -18,29 +19,30 @@ header{
   margin-right: -8px;
   border-left: 0px;
   border-right: 0px;
+  box-shadow: 0 0 3px rgb(183, 183, 183);
+  text-shadow: 0 0 3px rgb(183, 183, 183);
 }
 footer{
-  margin-top: 200px;
+  margin-top: 120px;
   background-color: rgb(12, 4, 37);
   border-top: 1px;
   border-top-color: white;
-  border-bottom-color: rgb(12, 4, 37);
   border-style: solid;
   margin-left: -8px;
   margin-right: -8px;
   border-left: 0px;
   border-right: 0px;
+  border-bottom: 0px;
+
 }
 main{
   display: flex;
-  grid-template-columns: 
-  "header header",
-  "conteudo igual";
   gap: 10%;
   margin-top: 30px;
 }
 label{
   color: rgb(192, 192, 192);
+  font-size: 20px;
 }
 input{
   border-style:solid;
@@ -48,8 +50,9 @@ input{
   border-width: 1px;
   display: block;
   height: 30px;
-  font-size: large;
-  color: rgb(12, 4, 37);
+  font-size: 30px;
+  color: rgb(183, 183, 183);
+  background-color: rgb(27, 34, 40);
 
 }
 button{
@@ -57,12 +60,14 @@ button{
   width: 160px;
   font-size: 25px;
   font-weight: bold;
-  background-color:rgb(12, 4, 37);
+  background-color:rgb(17, 1, 41);
   color: rgb(192, 192, 192);
   border-style:solid;
   border-color: white;
   cursor: pointer;
   border-width: 1px;
+  margin-top: 5%;
+  box-shadow: 0 0 3px rgb(183, 183, 183);
 }
 /*Style Class*/
 .conteudo{
@@ -72,43 +77,78 @@ button{
   display: grid;
   gap: 10px;
 }
-  .igual{
-    grid-area: "igual";
-    width: 20%;
-    font-weight: bold;
-    color: rgb(192, 192, 192);
-}
-.quadrado{
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(192, 192, 192);
-  border-radius: 10px;
-  background-color: transparent;
+#igual{
+  
   width: 300px;
-  height: 300px;  
+  height: 300px;
+  font-weight: bold;
+  color: rgb(15, 11, 29);
+  box-shadow: 0 0 3px rgb(183, 183, 183);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  border-style: solid;
+  border-color: aliceblue;
+  border-width: 1px;
+  background-color: rgb(137, 137, 137);
+  margin-top: 60px;
 }
 /*Style ID*/
+/*formulario*/
 #peso{
-  width: 50px;
+  width: 130px;
+  height: 50px;
 }
 #altura{
-  width: 80px;
+  width: 125px;
+  height: 50px;
 }
 #idade{
   width: 50px;
+  height: 50px;
 }
-#namezes{
+/*formulario*/
+/*#namezes{
   width: 300px;
-}
+}*/
 #pedrinho{
   width: 200px;
 }
 #gatinho{
-  width: 50px;
+  width: 40px;
   margin-left: 95%;
-  margin-bottom: 1px;
+  margin-top: -10px;
 }
 #resultado{
   margin-top: 140px;
   text-align: center;
+}
+#superman{
+  margin-left: 15px;
+  margin-top: 0px;
+}
+/*Deixar responsivo*/
+@media (max-width:480px),(min-height:650px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  /*.conteudo{
+    display: flex;
+    flex-direction: column;
+  }
+  .igual{
+    display: flex;
+    flex-direction: column;
+  }*/
+}
+/*img imc*/
+.imgimc{
+  color: rgb(183, 183, 183);
+  font-weight: bold;
+  width: 300px;
+}
+#imgimc2{
+  width: 300px;
+  box-shadow: 0 0 3px rgb(183, 183, 183);
 }
