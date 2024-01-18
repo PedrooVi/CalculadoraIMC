@@ -1,12 +1,12 @@
 
 function calcular(){
-    var txtAltura = document.getElementById("altura")
-    var txtPeso = document.getElementById("peso")
-    var resultado = document.getElementById('resultado')
-    var areaTxt = document.getElementById('igual')
+    let txtAltura = document.getElementById("altura")
+    let txtPeso = document.getElementById("peso")
+    let resultado = document.getElementById('resultado')
+    let areaTxt = document.getElementById('igual')
 
-    var altura = parseFloat(txtAltura.value)
-    var peso = parseFloat(txtPeso.value)
+    let altura = parseFloat(txtAltura.value)
+    let peso = parseFloat(txtPeso.value)
 
 
     imc = peso/(altura*altura)
